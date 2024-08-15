@@ -17,7 +17,7 @@ def total_upgrade_por_pedra(ano, base):
     return total
 
 
-ano_selecionado = st.selectbox('Escolha o ano', ['2020', '2021', '2022'])
+ano_selecionado = st.selectbox('Escolha o ano', ['2021', '2022'])
 base = carregar_base(ano_selecionado)
 
 
