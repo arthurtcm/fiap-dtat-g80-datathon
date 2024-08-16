@@ -42,7 +42,12 @@ def perc_ponto_virada_por_fase(ano, base):
     return percentuais
 
 
-ano_selecionado = st.selectbox('Escolha o ano', ['2020', '2021', '2022'])
+st.header('Ponto de Virada')
+st.subheader('Selecione o ano ao lado')
+
+st.divider()
+
+ano_selecionado = st.sidebar.selectbox('Escolha o ano', ['2020', '2021', '2022'])
 base = carregar_base(ano_selecionado)
 
 alunos_virada_por_pedra = total_ponto_virada_por_pedra(ano_selecionado, base)
