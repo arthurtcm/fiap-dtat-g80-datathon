@@ -17,7 +17,12 @@ def total_upgrade_por_pedra(ano, base):
     return total
 
 
-ano_selecionado = st.selectbox('Escolha o ano', ['2021', '2022'])
+st.header('Fases')
+st.subheader('Selecione o ano ao lado')
+
+st.divider()
+
+ano_selecionado = st.sidebar.selectbox('Escolha o ano', ['2021', '2022'])
 base = carregar_base(ano_selecionado)
 
 
